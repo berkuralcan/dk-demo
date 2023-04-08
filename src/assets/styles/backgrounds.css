@@ -1,0 +1,40 @@
+body{
+    background-color: #f2f2f2;
+    font-family: "Inter", sans-serif;
+
+}
+
+.global-container{
+    position: relative;
+    z-index: 0;
+    overflow-y: hidden;      
+
+}
+
+.main-container{
+    position: relative;
+    display: grid;
+    align-content: flex-end;
+    min-height: 91vh;
+    width: var(--site-width);
+    margin: 0 auto;
+    column-gap: var(--main-column-gap);
+    row-gap:2rem;
+    grid-template-columns: repeat(6, 1fr);
+    padding-bottom: 5rem;
+}
+
+@media screen and (max-width: 850px){
+    .main-container{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.card-red{
+    background: linear-gradient(45deg, var(--red) 0%, #FC2D2D 100%);
+}
+
+.card-yellow{
+    background: linear-gradient(45deg, #ffbb00 0%, #ffbd08 100%);
+}

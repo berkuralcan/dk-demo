@@ -1,0 +1,46 @@
+:root{
+    --color-background: #cc4040;
+   
+   
+    --site-width: 92.533%;
+    --main-column-gap: 1.6837%;
+
+    --st-border-radius: 1rem;
+    
+    /* Styles for the main navigation boxes */
+    
+    --color-box-background: #ffffffaa;
+    --hb-box-shadow: rgba(45, 62, 80, 0.12) 0px 1px 5px 0px;
+
+    --module-text-color: black;
+    
+    /* Colors for fonts */
+    
+    --main-font: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    --color-font-gray: #4d4d4d;
+    ;
+    
+    /* Global Background Colors */
+    
+    --red: #DA291B;
+    --yelllow: #FDC62E;
+    
+    /* Header  */
+    
+    --header-height: 9rem;
+    --header-background: #ffffff79;
+    
+    /* Filter Colors (use sparingly) */
+    
+    --red-filter: invert(16%) sepia(99%) saturate(7404%) hue-rotate(4deg) brightness(95%) contrast(118%);
+    --red-filter-dark: invert(16%) sepia(99%) saturate(7404%) hue-rotate(4deg) brightness(55%) contrast(118%);
+    
+    /* Red, Green, Yellow Colors for the "chip" component. These can also be used for other multi-colored components where we need to indicate a status. */
+    
+    --color-chip-red: #D2222D;
+    --color-chip-yellow: #FFBF00;
+    --color-chip-blue: #3F88C5;
+    --color-chip-green: #238823;
+    --color-chip-green-dark: #264625;
+
+}
