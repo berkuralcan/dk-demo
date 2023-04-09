@@ -113,10 +113,12 @@ const isMobile = function(){
 
     <ac-header></ac-header>
     <div class="main-container mt-20">
-      <MainBox class="col-start-1 col-end-2 card-red" icon="1" title="Aktif Sipariş" :data="activeOrders" />
-      <MainBox class="col-start-2 col-end-3 card-yellow" icon="2" title="Son 10 Gün Sipariş" :data="data.totalCount" />
-      <MainBox class="col-start-1 col-end-2 card-yellow" icon="3" title="Bugün Toplam" :data="getTotalAmountOfTodaysOrders()" />
-      <MainBox class="col-start-2 col-end-3 card-red" icon="4" title="Son 100 Sipariş" :data="getTotalOfAllORders()" />
+      <div class="grid col-start-1 col-end-3 grid-cols-2 row-start-1 row-end-3 sub-grid">
+        <MainBox class="card-red" icon="1" title="Aktif Sipariş" :data="activeOrders" />
+        <MainBox class="card-yellow" icon="2" title="Son 10 Gün Sipariş" :data="data.totalCount" />
+        <MainBox class="card-yellow" icon="3" title="Bugün Toplam" :data="getTotalAmountOfTodaysOrders()" />
+        <MainBox class="card-red" icon="4" title="Son 100 Sipariş" :data="getTotalOfAllORders()" />
+      </div>
       <OrderSources class="col-start-3 col-end-5 row-start-1 row-end-3" :orders="data.orders" ></OrderSources>
       <MostSold :orders="data.orders" class="row-start-1 row-end-3 col-start-5 col-end-7"/>
       <div class="table-container col-start-1 col-end-7">
@@ -137,6 +139,11 @@ h2.subtitle{
   font-size: 2.4rem;
   color: rgb(67, 67, 67);
   margin: 2rem 0;
+}
+
+.sub-grid{
+  gap:inherit;
+
 }
 
 </style>
