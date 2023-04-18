@@ -30,8 +30,10 @@ const getData = async function(){
 
     const params = {
         "startDate": dateStr,
-        "page": 4,
+        "page": 1,
     }
+
+    console.log(dateStr)
 
     const url = "https://ext.adisyo.com/api/External/v2/CompletedOrders"
     const headers = {
@@ -61,8 +63,10 @@ const getActiveOrders = async function(){
       alert("Aktif siparişleri alırken rate limit'e takıldık.")
     })
 
+    if(response.data){
+      activeOrders.value = response.data.totalCount
 
-    activeOrders.value = response.data.totalCount
+    }
 }
 
 onBeforeMount(async () => {
